@@ -1,0 +1,129 @@
+.navbar{
+    background-color: rgb(219, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    background-color: black;
+}
+
+.text{
+    background-image: linear-gradient(to right, rgb(231, 231, 175), rgb(221, 184, 184));
+    width: 50%;
+    height: 280px;
+    padding-left: 40px;
+    padding-right: 40px;
+    word-wrap: break-word; 
+    max-width: 90%; 
+    margin: auto;
+}
+
+button{
+    background-color: rgb(219, 63, 63);
+    height: 40px;
+    width:170px;
+    color: white;
+    border: none;
+    margin-top: 25px;
+}
+
+.image1{
+    background-size: cover; 
+    background-position: center;
+    width: 50%;
+    height: 280px;
+}
+
+.body2{
+    /* background-color: rgb(221, 184, 184); */
+    background-image: linear-gradient(to right, rgb(231, 231, 175), rgb(221, 184, 184));
+    height: 280px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.hero{
+    width: 50%;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 27px;
+}
+
+.hero1{
+    background-size: cover;
+}
+
+.hero2{
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.image2{
+    height: 100px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image3{
+    height: 100px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.image4{
+    height: 221px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.sam{
+    background-color: rgb(219, 63, 63);
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    word-wrap: break-word; 
+    max-width: 90%; 
+    
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar, .body, .body2, .hero, .hero1, .hero2 {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .text, .sam {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .image1, .image2, .image3, .image4 {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h3 {
+        font-size: 1.5em; /* Adjust font sizes for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .text, .image1 {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
